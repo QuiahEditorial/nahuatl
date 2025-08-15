@@ -1,0 +1,64 @@
+%%
+%% This is file `nahualt.sty',
+%%
+\NeedsTeXFormat{LaTeX2e}[2021/08/13]
+\ProvidesPackage{nahuatl}
+	[2021/08/13 v0.1 (c) Roberto Alvarez Zavala <quiah.editorial@gmail.com>]
+%
+\RequirePackage[T1]{fontenc}
+%
+\DeclareFontFamily{U}{nahuatl}{}
+\DeclareFontShape{U}{nahuatl}{m}{n}{ <-> nahuatl }{}
+%
+\providecommand\nahuatlFamily{\usefont{U}{nahuatl}{m}{n}}
+\providecommand\nahuatl[1]{{\nahuatlFamily\char#1}}
+%
+\DeclareTextCommand{\Cipactli}{U}{65}
+\DeclareTextCommand{\Ehecatl}{U}{66}
+\DeclareTextCommand{\Calli}{U}{67}
+\DeclareTextCommand{\Cuetzpalin}{U}{68}
+\DeclareTextCommand{\Coatl}{U}{69}
+\DeclareTextCommand{\Miquiztli}{U}{70}
+\DeclareTextCommand{\Mazatl}{U}{71}
+\DeclareTextCommand{\Tochtli}{U}{72}
+\DeclareTextCommand{\Atl}{U}{73}
+\DeclareTextCommand{\Itzcuintli}{U}{74}
+\DeclareTextCommand{\Ozomahtli}{U}{75}
+\DeclareTextCommand{\Malinalli}{U}{76}
+\DeclareTextCommand{\Acatl}{U}{77}
+\DeclareTextCommand{\Ocelotl}{U}{78}
+\DeclareTextCommand{\Cuauhtli}{U}{79}
+\DeclareTextCommand{\Cozcacuauhtli}{U}{80}
+\DeclareTextCommand{\Ollin}{U}{81}
+\DeclareTextCommand{\Tecpatl}{U}{82}
+\DeclareTextCommand{\Quiahutl}{U}{83}
+\DeclareTextCommand{\Xochitl}{U}{84}
+\DeclareTextCommand{\Yolotl}{U}{84}
+%
+\renewcommand{\Cipactli}{{\nahuatl {65}}}
+\renewcommand{\Ehecatl}{{\nahuatl {66}}}
+\renewcommand{\Calli}{{\nahuatl {67}}}
+\renewcommand{\Cuetzpalin}{{\nahuatl {68}}}
+\renewcommand{\Coatl}{{\nahuatl {69}}}
+\renewcommand{\Miquiztli}{{\nahuatl {70}}}
+\renewcommand{\Mazatl}{{\nahuatl {71}}}
+\renewcommand{\Tochtli}{{\nahuatl {72}}}
+\renewcommand{\Atl}{{\nahuatl {73}}}
+\renewcommand{\Itzcuintli}{{\nahuatl {74}}}
+\renewcommand{\Ozomahtli}{{\nahuatl {75}}}
+\renewcommand{\Malinalli}{{\nahuatl {76}}}
+\renewcommand{\Acatl}{{\nahuatl {77}}}
+\renewcommand{\Ocelotl}{{\nahuatl {78}}}
+\renewcommand{\Cuauhtli}{{\nahuatl {79}}}
+\renewcommand{\Cozcacuauhtli}{{\nahuatl {80}}}
+\renewcommand{\Ollin}{{\nahuatl {81}}}
+\renewcommand{\Tecpatl}{{\nahuatl {82}}}
+\renewcommand{\Quiahutl}{{\nahuatl {83}}}
+\renewcommand{\Xochitl}{{\nahuatl {84}}}
+\renewcommand{\Yolotl}{{\nahuatl {85}}}
+%
+\newfont{\Nahuatl}{Nahuatl}
+%
+\endinput
+%%
+%% End of file `nahuatl.sty'.
