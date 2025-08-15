@@ -1,0 +1,85 @@
+beginchar ("A", 10pt#, 10pt#, 0); "Cipactli";
+
+%c = b reflectedabout (z2; z4);
+%for n = 1; 3; 4; 5; 6; 7; 9: forsuffixes e = l; ; r: forsuffixes $ = b; c:z$[n]e = za[n]e transformed $; endfor endfor endfor
+
+z1 = ( (f + g+i)*w , b*h   );
+z2 = ( (f + 0.4e)*w , (b-g-i)*h );
+z3 = ( (f)*w , b*h );
+z4 = ( f  *w , (b+e)*h );
+z5 = ( (c-f)*w , (b+g)*h );
+z6 = ( (dr-.5i)*w , (b-e-.5i)*h );
+
+z7 = ( (g)*w, (c-hr)*h);
+z8 = ( f*w, (c+f+.5i)*h);
+z9 = ( (b)*w, (dr)*h);
+z10= ( (a-dr-.5i)*w, (dr+hr)*h);
+z11= ( (a-f-i)*w, (e+.8i)*h);
+z12= ( (a-dr+g+.5i)*w, (e-g+.5i)*h);
+z13= ( (a-dr+g-i)*w, (e)*h);
+z14= ( (a-dr+.2i)*w, (e+hr)*h);
+z15= ( (b-f+i)*w, (e)*h);
+z16= ( (f+hr)*w, (c)*h);
+
+z17= ( (f)*w, (b-hr)*h);
+z18= ( (hr+.5i)*w, (b-e-i)*h);
+
+z19= ( (c+f+i)*w, (b-g)*h);
+
+z20= ( (a-dr-.7i)*w, (c-i)*h);
+z21= ( (a-f)*w, (b-e-i)*h);
+z22= ( (a-f)*w, (b-g-hr)*h);
+z23= ( (c+g)*w, (b-e)*h);
+z24= ( (b-.5dr)*w, (c)*h);
+z25= ( (b-f)*w, (c-.2i)*h);
+
+z26= ( (a)*w, (f)*h);
+z27= ( (a-e)*w, (0)*h);
+z28= ( (b+f)*w, (e)*h);
+
+z29= ( (0)*w, (dr)*h);
+z30= ( (dr)*w, (dr+f+.2i)*h);
+z31= ( (e)*w, (e-i)*h);
+z32= ( (dr+f+i)*w, (e+g+i)*h);
+z33= ( (dr+f+.5i)*w, (hr)*h);
+z34= ( (c+f+.5i)*w, (e+.5i)*h);
+z35= ( (c+e)*w, (0)*h);
+z36= ( (b)*w, (e-.1i)*h);
+z37= ( (b+g)*w, (0)*h);
+
+z38= ( (a-dr)*w, (b-e-hr-i)*h);
+z39= ( (a-dr-dr)*w, (b-e-i)*h);
+z40= ( (b)*w, (c-g+.4i)*h);
+
+z41= ( (dr+f-i)*w, (b-g)*h);
+
+z42= ( (dr+g+.6i)*w, (c+.1i)*h);
+z43= ( (f)*w, (c)*h);
+z44= .4[z28,z37];
+z45= ( (a)*w, (b-dr)*h);
+
+%z46= ( ()*w, ()*h);
+%z47= ( ()*w, ()*h);
+%z48= ( ()*w, ()*h);
+%z49= ( ()*w, ()*h);
+
+%begingroup x:=x+1; x endgroup + begingroup x:=2x; x endgroup
+
+pickup pencircle scaled 12;
+
+draw z1{dir30}..{dir180}z2..{dir85}z3..{dir95}z4{dir-15}..{dir-40}z5..tension2..z41..tension2..z6;
+draw z7{dir110}..{dir10}z8..z42{dir310}..z9..{dir0}z10..z11{dir270}..z12..{dir75}z13{dir70}..{dir180}z14..z36..z34..{dir130}z30..tension1.2..z43..tension5..z29;
+draw z17{dir210}..{dir280}z18;
+draw z5{dir-15}..z19;
+draw z20{dir0}..z21{dir55}..z22..tension3..z19..tension1.2..z23..z24..z25;
+draw z21{dir0}..z45{dir290}..{dir260}z26..{dir180}z27..z44..z14;
+draw z43--z29--z30--z31--z32--z33--z34--z35--z36--z37--z28;
+draw z38..tension6..z39..tension2..z25..z40..tension1.2..z20..tension1.5..z38;
+
+draw ccr (b+i,dr+i,i);
+
+% filldraw ccr(14.5,12.5,1);
+
+penlabels(range 1 thru 50);
+
+endchar;

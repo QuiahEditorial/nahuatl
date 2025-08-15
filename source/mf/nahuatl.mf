@@ -1,0 +1,63 @@
+% This is the source of nahuatl.mf
+%
+% (c) 2021 SIL OFL 
+%
+% Version 0.1 – 26 February 2007
+%
+% https://ctan.org/license/ofl
+%
+% Roberto Alvarez Zavala
+%
+% This file is part of the package nahuatl V 0.1
+%
+% Please read the files readme.txt
+%
+% Content: nahuatl.mf
+%
+
+font_size:=12pt#;
+
+mode_setup;
+
+define_pixels(u);
+
+ro:=1.618;
+a=1;
+b=0.61804;
+c=0.38194;
+dr=0.23608;
+e=0.14591;
+f=0.09017;
+g=0.05573;
+hr=0.03444;
+i=0.02128;
+j:=i*0.618;
+
+def ccr (expr d,e,f) = ( (d-f)*(w/a) , e*h/b )..( (d+f)*(w/a) , e*h/b )..cycle; enddef;
+def cir (expr a,b) = draw a..b..cycle; enddef;
+
+input A.mf
+input B.mf
+input C.mf
+input D.mf
+input E.mf
+input F.mf
+input G.mf
+input H.mf
+input I.mf
+input J.mf
+input K.mf
+input L.mf
+input M.mf
+input N.mf
+input O.mf
+input P.mf
+input Q.mf
+input R.mf
+input S.mf
+input T.mf
+input U.mf
+
+end input
+end
+bye.

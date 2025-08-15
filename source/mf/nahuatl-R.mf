@@ -1,0 +1,29 @@
+beginchar ("R", 10pt#, 10pt#, 0); "Tecpatl";
+
+z0= ( (.5a)*w, (b-g)*h);
+z1= ( (.5a)*w, (b-e)*h);
+z2= ( (.5a-g-hr)*w, (b-g)*h);
+z3= ( (.5a+hr)*w, (b+hr)*h);
+
+z4= ( (0)*w, (.5a)*h);
+z5= ( (.5a)*w, (b)*h);
+z6= ( (a)*w, (.5a)*h);
+z7= ( (.5a)*w, (.5a)*h);
+
+z8= ( (c-g)*w, (b)*h);
+z9= ( (c-g)*w, (c)*h);
+
+z10= ( (b+g)*w, (b)*h);
+z11= ( (b+g)*w, (c)*h);
+
+pickup pencircle scaled 12;
+
+draw z0..z1..z2..z3;
+draw z4{dir35}..{dir-35}z6{dir215}..{dir145}z4;
+draw z8..z9;
+draw z10..z11;
+%draw ccr (.5b,.3b+.25i,g);
+
+penlabels(range 0 thru 36);
+
+endchar;

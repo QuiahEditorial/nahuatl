@@ -1,0 +1,55 @@
+beginchar ("H", 10pt#, 10pt#, 0); "Tochtli";
+
+z0= ( (a-f)*w, (c-i)*h);
+z1= ( (a-e+i)*w, (c-g)*h);
+z2= ( (a-f+i)*w, (c-f)*h);
+z3= ( (a)*w, (c-hr)*h);
+z4= ( (a-e)*w, (c+f)*h);
+z5= ( (c+f)*w, (b)*h);
+z6= ( (c-f)*w, (b-f-i)*h);
+
+z7= ( (0)*w, (-f)*h);
+z8= ( (f)*w, (c)*h);
+z9= ( (dr)*w, (b-e-i)*h);
+z10= ( (dr+hr)*w, (b-f-i)*h);
+z11= ( (i)*w, (c)*h);
+z12= ( (-g)*w, (-hr)*h);
+z13= ( (-hr)*w, (-f)*h);
+z14= ( (e)*w, (0)*h);
+z15= ( (dr)*w, (c-f)*h);
+
+z16= ( (c+f)*w, (c-f)*h);
+z17= ( (c+f)*w, (g)*h);
+z18= ( (c+dr)*w, (hr)*h);
+z19= ( (a-e+g)*w, (0)*h);
+z20= ( (a-g)*w, (g)*h);
+
+z21= ( (e+i)*w, (g)*h);
+z22= ( (c+g)*w, (g)*h);
+
+z23= ( (a-dr)*w, (f)*h);
+z24= ( (a-dr+hr)*w, (e+g+i)*h);
+z25= ( (a-i)*w, (e+hr+j)*h);
+
+z26= ( (a-dr)*w, (e+j)*h);
+z27= ( (b+hr)*w, (e+i)*h);
+z28= ( (a-e)*w, (g+j)*h);
+z29= ( (a-e+hr)*w, (e+g+j)*h);
+
+pickup pencircle scaled 12;
+
+draw z0..z1..z2..{dir90}z3..{dir170}z4{dir130}..tension1.1..z5..z6;
+draw z7{dir60}..{dir80}z8..{dir-40}z9..z10{dir130}..z11{dir260}..z12{dir235}..z13..z7..z14..{dir70}z15;
+draw z16..z17..z18..tension1.5..z19{dir0}..{dir120}z20;
+draw z21{dir-20}..z22;
+draw z20..tension3..z23..tension2..z24..tension3..z25..tension2.5..z20;
+draw z2{dir00}..{dir240}z25;
+draw z27{dir-15}..z26;
+draw z28{dir65}..z29;
+
+fill ccr(b-g, dr, hr);
+draw ccr(b-g, dr, f+i);
+
+penlabels(range 0 thru 55);
+
+endchar;

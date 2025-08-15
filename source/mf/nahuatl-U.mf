@@ -1,0 +1,87 @@
+beginchar ("U", 10pt#, 10pt#, 0); "Yolotl";
+
+z0= ( (dr-i)*w, (a-e)*h);
+z1= ( (e-i)*w, (a-dr-i)*h);
+z2= ( (0)*w, (a-e+i)*h);
+z3= ( (e+hr)*w, (a)*h);
+z4= ( (c)*w, (a-e)*h);
+
+z5= ( (dr-i)*w, (a-e)*h);
+z6= ( (e)*w, (a-c-hr)*h);
+z7= ( (dr)*w, (dr)*h);
+z8= ( (.5a)*w, (0)*h);
+
+z0= ( (dr-i)*w, (a-e)*h);
+z9= ( (dr-i)*w, (a-e)*h);
+z10= ( (dr-hr)*w, (a-dr)*h);
+z11= ( (c-i)*w, (b-g)*h);
+z12= ( (.5a)*w, (b+i)*h);
+
+z13= ( (dr)*w, (dr)*h);
+z14= ( (c)*w, (dr+f)*h);
+z15= ( (.5a)*w, (dr)*h);
+
+z16= ( (.5a)*w, (a)*h);
+z17= ( (.5a)*w, (0)*h);
+
+z18= ( (.5a)*w, (a-e)*h);
+
+z19= ( (g)*w, (a+b-f)*h);
+z20= ( (e-g)*w, (a+b-e)*h);
+z21= ( (e)*w, (a+b-f)*h);
+z22= ( (g)*w, (a+b)*h);
+z23= ( (-g)*w, (a+b-f)*h);
+z24= ( (i)*w, (a+b-dr)*h);
+z25= ( (dr+hr)*w, (a+b-dr-hr)*h);
+z26= ( (c-i)*w, (a+b-dr-hr)*h);
+z27= ( (c)*w, (a+b-c-hr)*h);
+
+z28= ( (c)*w, (a+b-e-2i)*h);
+z29= ( (.5a)*w, (a+b-dr-f-g)*h);
+
+z30= ( (.5a-hr)*w, (hr)*h);
+
+z31= ( (b)*w, (a+b-c)*h);
+
+
+pickup pencircle scaled 12;
+
+draw z0..z1..z2..z3..z4;
+draw z5..z6..z7..z8;
+draw z0..z10..z11..z12;
+draw z13..z14..z15;
+
+draw (z0..z1..z2..z3..z4) reflectedabout (z16, z17);
+draw (z5..z6..z7..z8) reflectedabout (z16, z17);
+draw (z0..z10..z11..z12) reflectedabout (z16, z17);
+draw (z13..z14..z15) reflectedabout (z16, z17);
+
+draw z4{dir80}..{dir260}z18;
+draw (z4{dir80}..{dir260}z18) reflectedabout (z16, z17);
+
+draw z19..z20..z21..z22..z23..z24..z25..{dir270}z27--z4;
+draw z20{dir0}..z28..{dir270}z29--z18;
+
+draw (z19..z20..z21..z22..z23) shifted (z30)..{dir270}z29;
+draw (z20) shifted (z30) {dir270}..{dir270}z31-- (z18) shifted (z18-z4);
+
+%draw ccr (.5a,f,hr);
+
+penlabels(range 0 thru 32);
+
+endchar;
+
+endinput
+
+z0= ( ()*w, ()*h);
+z1= ( ()*w, ()*h);
+z2= ( ()*w, ()*h);
+z3= ( ()*w, ()*h);
+z4= ( ()*w, ()*h);
+z5= ( ()*w, ()*h);
+z6= ( ()*w, ()*h);
+z7= ( ()*w, ()*h);
+z8= ( ()*w, ()*h);
+z9= ( ()*w, ()*h);
+
+draw z0..z1..z2..z3..z4..z5..z6..z7..z8..z9

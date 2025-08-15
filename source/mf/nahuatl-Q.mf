@@ -1,0 +1,28 @@
+beginchar ("Q", 10pt#, 10pt#, 0); "Ollin";
+
+z0= ( (0)*w, (dr+hr)*h);
+z1= ( (0)*w, (a-dr-hr)*h);
+z2= ( (dr+g)*w, (b+hr)*h);
+z3= ( (.5a)*w, (a-dr+g)*h);
+z4= ( (a-dr-g)*w, (b+hr)*h);
+z5= ( (a)*w, (a-dr-hr)*h);
+z6= ( (a)*w, (dr+hr)*h);
+z7= ( (a-dr-g)*w, (c-hr)*h);
+z8= ( (.5a)*w, (dr-hr)*h);
+z9= ( (dr+g)*w, (c-hr)*h);
+
+z10= ( (0)*w, (.5a)*h);
+z11= ( (c)*w, (.5a)*h);
+z12= ( (b)*w, (.5a)*h);
+z13= ( (a)*w, (.5a)*h);
+
+pickup pencircle scaled 12;
+
+draw z0{dir92}..{dir88}z1--z2..z3..z4--z5{dir272}..{dir268}z6--z7..z8..z9--cycle;
+draw z10--z11;
+draw z12--z13;
+draw ccr (.5a,.3a+.25hr,f+i);
+
+penlabels(range 0 thru 36);
+
+endchar;

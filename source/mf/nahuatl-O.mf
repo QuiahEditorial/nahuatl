@@ -1,0 +1,62 @@
+beginchar ("O", 10pt#, 10pt#, 0); "Cuauhtli";
+
+z0= ( (dr+f-hr)*w, (c-g+hr)*h);
+z1= ( (dr+hr)*w, (c-f-hr+hr)*h);
+z2= ( (dr-hr)*w, (c-g)*h);
+z3= ( (dr)*w, (c+hr)*h);
+z4= ( (c-hr)*w, (c+hr)*h);
+z5= ( (c)*w, (dr)*h);
+z6= ( (c+f+hr)*w, (e)*h);
+z7= ( (b)*w, (e)*h);
+z8= ( (b)*w, (hr)*h);
+z9= ( (e)*w, (hr)*h);
+z10= ( (e)*w, (f)*h);
+z11= ( (c+f)*w, (f)*h);
+
+z12= ( (c+g)*w, (f)*h);
+z13= ( (dr-hr)*w, (e+hr)*h);
+z14= ( (g)*w, (dr-g)*h);
+z15= ( (g)*w, (f)*h);
+z16= ( (0)*w, (e)*h);
+z17= ( (0)*w, (dr+hr)*h);
+z18= ( (e)*w, (c-g)*h);
+
+z19= ( (b-g)*w, (c+f)*h);
+z20= ( (a-e)*w, (c)*h);
+z21= ( (a)*w, (c)*h);
+z22= ( (a)*w, (c-f)*h);
+z23= ( (a-e-g)*w, (c-f)*h);
+z24= ( (a)*w, (c-f-f)*h);
+z25= ( (a-e-g)*w, (c-f-f)*h);
+z26= ( (a)*w, (c-3f)*h);
+z27= ( (a-e-g)*w, (c-3f)*h);
+z28= ( (a)*w, (0)*h);
+z29= ( (a-e-g)*w, (c-4f)*h);
+
+z30= ( (a-dr)*w, (f)*h);
+
+z31= ( (b+f)*w, (dr+g+hr)*h);
+z32= ( (c+f)*w, (dr+g+hr+hr)*h);
+z33= ( (c+f)*w, (dr)*h);
+z34= ( (c+e+hr)*w, (dr-g+hr)*h);
+z35= ( (b)*w, (dr-g+hr)*h);
+z36= ( (b+g)*w, (dr)*h);
+
+pickup pencircle scaled 12;
+
+draw z0..z1..z2..z3..z4..z5..z6..z7..z8{dir180}..z9{dir180}..{dir0}z10..z11;
+draw z12{dir170}..z13..{dir270}z14..{dir270}z15{dir160}..z16..z17..z18..z2;
+draw z4..z19..{dir0}z20..{dir0}z21..z22{dir180}..{dir180}z23;
+draw z22{dir0}..{dir180}z24..z25;
+draw z24{dir0}..{dir180}z26..z27;
+draw z26{dir0}..{dir180}z28..z29;
+draw z8{dir270}..{dir45}z30{dir225}..{dir45}z29;
+draw z31--z32..z33..z34..z35..z36..cycle;
+
+draw ccr (b-g,dr-g,hr);
+
+penlabels(range 0 thru 36);
+
+endchar;
+
+endinput

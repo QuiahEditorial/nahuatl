@@ -1,0 +1,50 @@
+beginchar ("C", 10pt#, 10pt#, 0); "Calli";
+
+z0= ( (0)*w, (0)*h);
+z1= ( (b)*w, (0)*h);
+z2= ( (b)*w, (e)*h);
+z3= ( (0)*w, (e)*h);
+
+z4= ( (dr)*w, (e)*h);
+z5= ( (dr)*w, (dr+e)*h);
+
+z6= ( (dr+e)*w, (dr+e)*h);
+z7= ( (dr+e)*w, (e*2)*h);
+z8= ( (dr+2*e+g)*w, (e*2)*h);
+z9= ( (dr+2*e+g)*w, (e+2*dr)*h);
+z10= ( (-hr)*w, (e+2*dr)*h);
+z11= ( (-hr)*w, (e+dr)*h);
+z12= ( (c+e-hr)*w, (e+dr)*h);
+z13= ( (c+e-hr)*w, (2*e+dr)*h);
+z14= ( (g)*w, (2*e+dr)*h);
+z15= ( (g)*w, (e+dr)*h);
+
+z16= ( (b+j)*w, (e+2*dr)*h);
+z17= ( (dr+2*e+g)*w, (b+e-i)*h);
+z18= ( (dr+2*e+g)*w, (b+e+g)*h);
+z19= ( (dr+2*e+g)*w, (b+e+f+g)*h);
+z20= ( (-g)*w, (b+e+f+g)*h);
+z21= ( (-g)*w, (b+e+g)*h);
+z22= ( (-g)*w, (b+e-i)*h);
+z23= ( (-f)*w, (e+2*dr)*h);
+
+z24= ( (dr+e)*w, (e)*h);
+z25= ( (dr+2*e)*w, (e)*h);
+z26= ( (dr+2*e)*w, (2*e)*h);
+%z27= ( ()*w, ()*h);
+%z28= ( ()*w, ()*h);
+%z29= ( ()*w, ()*h);
+
+pickup pencircle scaled 12;
+
+draw z0--z1--z2--z3--z0;
+draw z4--z5;
+draw z6--z7--z8--z9--z10--z11--z12--z13--z14--z15;
+draw z9--z16--z17--z18--z19--z20--z21--z22--z23--z10;
+draw z21--z18;
+draw z7--z24;
+draw z25--z26;
+
+penlabels(range 0 thru 45);
+
+endchar;

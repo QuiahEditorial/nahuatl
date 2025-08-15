@@ -1,0 +1,69 @@
+beginchar ("B", 10pt#, 10pt#, 0); "Ehecatl";
+
+%c = b reflectedabout (z2; z4);
+%for n = 1; 3; 4; 5; 6; 7; 9: forsuffixes e = l; ; r: forsuffixes $ = b; c:z$[n]e = za[n]e transformed $; endfor endfor endfor
+
+z0= ( (b-e-hr)*w, (c+i)*h);
+z1= ( (b-e)*w, (c-g)*h);
+z29= ( (dr+g)*w, (c+i)*h);
+z2= ( (e)*w, (b-e)*h);
+z3= ( (dr+hr)*w, (b+g)*h);
+z4= ( (dr+hr+i)*w, (b+g-i)*h);
+z5= ( (b-e)*w, (b-e+i)*h);
+
+z6= ( (b-g)*w, (c+g)*h);
+z7= ( (b+g+hr)*w, (c-hr)*h);
+z8= ( (a-dr)*w, (c+g)*h);
+z9= ( (b+hr)*w, (b-f)*h);
+
+z10= ( (b+i)*w, (b-f-i)*h);
+z11= ( (b-i)*w, (b-e)*h);
+z12= ( (b-e)*w, (b)*h);
+
+z13= ( (a-dr)*w, (c+i)*h);
+z14= ( (a-dr+g)*w, (c)*h);
+z15= ( (a)*w, (c)*h);
+z16= ( (a-dr-i)*w, (f)*h);
+
+z17= ( (b)*w, (c-f)*h);
+z18= ( (b)*w, (0)*h);
+z19= ( (b-e)*w, (0)*h);
+z20= ( (b-e-hr)*w, (hr)*h);
+z21= ( (b-e-hr)*w, (f)*h);
+z22= ( (hr+i)*w, (f-i)*h);
+z23= ( (hr)*w, (e)*h);
+z24= ( (b-e-i)*w, (dr-hr)*h);
+
+z25= ( (b-e)*w, (dr+i)*h);
+z26= ( (0)*w, (c-g)*h);
+z27= ( (0)*w, (c)*h);
+z28= ( (c)*w, (c-i)*h);
+
+z30= ( (b-g)*w, (dr+i)*h);
+z31= ( (b-g)*w, (dr-hr+.38i)*h);
+z32= ( (b-g-hr)*w, (dr-hr-.4i)*h);
+z33= ( (b-g-hr)*w, (e-i)*h);
+z34= ( (b-e)*w, (e)*h);
+
+z35= ( (b+i+g)*w, (b-f-i-g)*h);
+z36= ( (b-i+g)*w, (b-e-g)*h);
+
+pickup pencircle scaled 12;
+
+draw z0..z1..z28..z29..tension3..z2..tension2..z3..z4..tension3..z5;
+draw z6..z7..z9;
+draw z11..z12..z10;
+draw z13..z14..tension2..z15{dir270}..tension.9..{dir170}z16;
+draw z17{dir0}..z18..tension1.5..z19..z20..z21..tension4..z22..tension1.5..z23--z24;
+draw z25..tension5..z26..tension1.3..z27--z28;
+draw z33{dir180}..z24..z25..tension1.3..z30..tension1.1..z31..{dir225}z32..cycle;
+draw z11..z36;
+draw z10..z35;
+
+draw ccr (b-g-.5i,b-dr-.2i-hr,i);
+
+% filldraw ccr(14.5,12.5,1);
+
+penlabels(range 0 thru 36);
+
+endchar;

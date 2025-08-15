@@ -1,0 +1,89 @@
+beginchar ("D", 10pt#, 10pt#, 0); "Cuetzpalin";
+
+z0= ( (g)*w, (c-g+i)*h);
+z1= ( (g)*w, (c-g-i)*h);
+z2= ( (j)*w, (c-g-i)*h);
+z3= ( (j)*w, (c-j)*h);
+z4= ( (e)*w, (c+g)*h);
+
+z6= ( (hr+e+j)*w, (c-hr)*h);
+z7= ( (e+j)*w, (c-i)*h);
+z8= ( (e+i)*w, (b-e-i)*h);
+z9= ( (e+f)*w, (b-e-j)*h);
+z10= ( (c-hr)*w, (b-e-i)*h);
+z11= ( (c-i)*w, (c-j)*h);
+z12= ( (c-i)*w, (dr)*h);
+z13= ( (dr)*w, (dr-i)*h);
+z14= ( (e)*w, (dr-hr)*h);
+z15= ( (hr)*w, (dr-hr)*h);
+z16= ( (hr)*w, (dr)*h);
+z17= ( (e+g)*w, (dr+hr)*h);
+
+z18= ( (c+e)*w, (dr+f)*h);
+z19= ( (c+e-j)*w, (e-g)*h);
+z20= ( (dr-i)*w, (i)*h);
+z21= ( (dr-hr)*w, (f)*h);
+z22= ( (c+hr)*w, (e+i)*h);
+z23= ( (c+g)*w, (c+g)*h);
+z24= ( (a)*w, (c+g)*h);
+z25= ( (a+e)*w, (dr)*h);
+z26= ( (a+c-j)*w, (g+i)*h);
+z27= ( (a+c-j)*w, (g-i)*h);
+z28= ( (a+f)*w, (e+i)*h);
+z29= ( (a)*w, (dr+hr)*h);
+z30= ( (b+hr)*w, (e+hr)*h);
+
+z31= ( (a-f)*w, (dr+f)*h);
+z32= ( (b)*w, (dr+hr)*h);
+z33= ( (b-g)*w, (dr-hr)*h);
+z34= ( (b-hr)*w, (e)*h);
+z35= ( (b)*w, (e-i)*h);
+z36= ( (a-f)*w, (e-i)*h);
+z37= ( (a-f+i)*w, (e-f)*h);
+z38= ( (a-i)*w, (-j)*h);
+z39= ( (a+j)*w, (i)*h);
+z40= ( (a+2*i)*w, (g)*h);
+z41= ( (a+f-i)*w, (f)*h);
+z42= ( (a+hr)*w, (f+i)*h);
+z43= ( (a)*w, (e)*h);
+z44= ( (a)*w, (dr-hr)*h);
+z45= ( (a-g)*w, (dr-hr)*h);
+
+z46= ( (e+j)*w, (f)*h);
+z47= ( (f)*w, (f+hr)*h);
+z48= ( (0)*w, (f+hr+i)*h);
+z49= ( (0)*w, (f+j)*h);
+z50= ( (0)*w, (hr+j)*h);
+z51= ( (0)*w, (0)*h);
+z52= ( (e+j)*w, (0)*h);
+
+z53= ( (e+hr)*w, (c+j)*h);
+z54= ( (dr+.5*e)*w, (c+j)*h);
+z55= ( (c-f)*w, (c-hr)*h);
+
+z56= ( (g+j)*w, (f)*h);
+z57= ( (g+j)*w, (g)*h);
+z58= ( (a-hr)*w, (g+j)*h);
+z59= ( (a)*w, (f)*h);
+
+pickup pencircle scaled 12;
+
+draw z0{dir0}..{dir190}z1..z2..z3..tension1.9..z4;
+draw z6..z7..tension1.3..z8..tension1.5..z9..z10..{dir250}z11{dir-20}..z12{dir220}..tension2..z13..z14{dir185}..z15..z16..tension2..{dir5}z17;
+draw z2{dir240}..z16;
+draw z18{dir270}..tension2..z19..tension2..{dir190}z20..tension2..z21{dir30}..tension1.5..{dir30}z22{dir100}..{dir55}z23{dir35}..tension1.9..z24{dir-55}..z25..z26{dir-15}..z27{dir170}..z28..tension1.4..{dir100}z29{dir280}..tension1.8..{dir200}z30;
+draw z31{dir200}..z32..z33..z34..z35..tension3..z36..z37..z38{dir-45}..{dir135}z39{dir-45}..{dir135}z40{dir-45}..{dir135}z41..z42..z43..tension2..z44..tension2..{dir190}z45;
+draw z21..z46..z47..z48{dir180}..{dir0}z49{dir180}..{dir0}z50{dir180}..{dir20}z51..z52..z20;
+draw z53..tension10..z54{dir250}..z55..tension1.5..z6..{dir90}z53;
+draw z49{dir10}..z56;
+draw z50{dir30}..z57;
+draw z39..z58;
+draw z40..z59;
+draw z10{dir0}..{dir-30}z23;
+draw z36{dir90}..z45;
+
+fill ccr(dr, dr, i);
+
+penlabels(range 0 thru 55);
+
+endchar;

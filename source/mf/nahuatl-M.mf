@@ -1,0 +1,55 @@
+beginchar ("M", 10pt#, 10pt#, 0); "Acatl";
+
+z0= ( (.5a+hr)*w, (a-g)*h);
+z1= ( (.5a)*w, (a-e)*h);
+z2= ( (.5a-g)*w, (a-g)*h);
+z3= ( (.5a)*w, (a)*h);
+z4= ( (b)*w, (a-f)*h);
+z5= ( (.5a)*w, (a-dr)*h);
+z6= ( (c)*w, (a-f)*h);
+z7= ( (.5a-g)*w, (a)*h);
+
+z8= ( (c+hr)*w, (a-dr+hr)*h);
+z9= ( (c)*w, (c+hr)*h);
+z10= ( (c+g)*w, (c-g)*h);
+z11= ( (b-g)*w, (c-g)*h);
+z12= ( (b)*w, (c+hr)*h);
+z13= ( (b-hr)*w, (a-dr+hr)*h);
+
+z14= ( (c+hr)*w, (0)*h);
+z15= ( (b-hr)*w, (0)*h);
+
+z16= ( (c+hr)*w, (b)*h);
+z17= ( (b-hr)*w, (b)*h);
+z18= ( (c)*w, (b-f)*h);
+z19= ( (b)*w, (b-f)*h);
+z20= ( (c+hr)*w, (.5dr)*h);
+z21= ( (b-hr)*w, (.5dr)*h);
+
+pickup pencircle scaled 12;
+
+draw z0..z1..z2..z3..z4..z5..z6..z7;
+draw z8--z9..z10..z11..z12--z13;
+draw z10--z14--z15--z11;
+draw z16--z17;
+draw z18--z19;
+draw z20--z21;
+
+penlabels(range 0 thru 36);
+
+endchar;
+
+endinput
+
+z0= ( ()*w, ()*h);
+z1= ( ()*w, ()*h);
+z2= ( ()*w, ()*h);
+z3= ( ()*w, ()*h);
+z4= ( ()*w, ()*h);
+z5= ( ()*w, ()*h);
+z6= ( ()*w, ()*h);
+z7= ( ()*w, ()*h);
+z8= ( ()*w, ()*h);
+z9= ( ()*w, ()*h);
+
+draw z0..z1..z2..z3..z4..z5..z6..z7..z8..z9
