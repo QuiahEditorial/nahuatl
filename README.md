@@ -1,5 +1,5 @@
 nahuatl is a METAFONT font for nahuatl gliphs
 
-(C) LaTeX Project Public License version 1.3 http://www.latex-project.org/lppl.txt -- 2025 Roberto Alvarez Zavala
+(C) SIL Open Font License (ofl) https://ctan.org/license/ofl -- The LaTeX Project Public License 1.3 https://ctan.org/license/lppl1.3 -- 2025 Roberto Alvarez Zavala
 
 [M] quiah.editorial@gmail.com , [F] El LaTeXnomicon
